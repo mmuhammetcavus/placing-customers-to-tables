@@ -1,9 +1,9 @@
 /*
-Student Name: 
-Student Number: 
+Student Name: Muhammet Çavuş
+Student Number: 2018400306
 Project Number: 1
-Compile Status: [SUCCESS/FAIL]
-Running Status: [SUCCESS/FAIL]
+Compile Status: [SUCCESS/FAIL] success
+Running Status: [SUCCESS/FAIL] success
 Notes: Anything you want to say about your code that will be helpful in the grading process.
 */
 
