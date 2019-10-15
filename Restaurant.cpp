@@ -13,10 +13,26 @@ using namespace std;
 
 void Restaurant::execute(const vector<string>& operations) {
     for (const string& op : operations){
-        cout << "Operation: " << op << "\t"; 
+        cout << "Operation: " << op << "\t";
         
 		/* YOU NEED TO IMPLEMENT THIS PART */
-
+		if(op=="N") {
+		    for(int i=0; i<tables.size(); i++) {
+		        if(!tables[i].isOccupied()) {
+                    tables[i].occupy();
+                    break;
+		        }
+		    }
+		} else if(op=="S") {
+            for(int i=tables.size()-1; i>=0; i--) {
+                if(!tables[i].isOccupied()) {
+                    tables[i].occupy();
+                    break;
+                }
+            }
+        } else {
+            tables[stoi(op) -1].empty();
+		}
         cout << "State: " << *this << endl;
     }
 }
